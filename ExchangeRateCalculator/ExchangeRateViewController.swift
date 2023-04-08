@@ -8,22 +8,24 @@
 import UIKit
 
 class ExchangeRateViewController: UIViewController {
-
+    
+    let exchangeRateView = ExchangeRateView()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        setNavigationBar()
+       
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    override func loadView() {
+        self.view = exchangeRateView
     }
-    */
+    
+}
 
+private extension ExchangeRateViewController{
+    func setNavigationBar(){
+        self.title = "0000-00-00 00:00:00기준"
+    }
 }
