@@ -6,18 +6,72 @@
 //
 
 import UIKit
+import SnapKit
 
-class InterestTableViewCell: UITableViewCell {
-  
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+final class InterestTableViewCell: UITableViewCell {
+    
+    private lazy var countryImageView: UIImageView = {
+        let imageView = UIImageView()
+        imageView.backgroundColor = .gray
+        
+        return imageView
+    }()
+    
+    private let countryNameLabel: UILabel = {
+        let label = UILabel()
+        label.text = "중국"
+        label.font = .systemFont(ofSize: 20, weight: .bold)
+        
+        return label
+    }()
+    
+    private let sellValueLabel: UILabel = {
+        let label = UILabel()
+        label.text = "1232.1"
+        label.font = .systemFont(ofSize: 16)
+        
+        return label
+    }()
+    
+    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
+        super.init(style: style, reuseIdentifier: reuseIdentifier)
+        
+        setLayout()
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    private func setLayout(){
+        
+        [
+            countryImageView,
+            countryNameLabel,
+            sellValueLabel
+            
+        ].forEach{ self.addSubview($0) }
+        
+        let margin: CGFloat = 15
+        let width: CGFloat = 120
+        
+        countryImageView.snp.makeConstraints{
+            $0.leading.equalToSuperview().offset(margin)
+            $0.centerY.equalToSuperview()
+            $0.width.equalTo(90)
+            $0.height.equalTo(60)
+        }
+        
+        countryNameLabel.snp.makeConstraints{
+            $0.leading.equalTo(countryImageView.snp.trailing).offset(margin)
+            $0.centerY.equalTo(countryImageView)
+        }
+        
+        sellValueLabel.snp.makeConstraints{
+            $0.trailing.equalToSuperview().inset(margin)
+            $0.centerY.equalTo(countryImageView.snp.centerY)
+        }
+        
     }
 
 }
