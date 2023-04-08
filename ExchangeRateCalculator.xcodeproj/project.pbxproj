@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		FA51A8BF29E11251004DDEDF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA51A8BE29E11251004DDEDF /* AppDelegate.swift */; };
 		FA51A8C129E11251004DDEDF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA51A8C029E11251004DDEDF /* SceneDelegate.swift */; };
-		FA51A8C329E11251004DDEDF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA51A8C229E11251004DDEDF /* ViewController.swift */; };
 		FA51A8C829E11253004DDEDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA51A8C729E11253004DDEDF /* Assets.xcassets */; };
 		FA51A8CB29E11253004DDEDF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA51A8C929E11253004DDEDF /* LaunchScreen.storyboard */; };
 		FA51A8D729E1155F004DDEDF /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA51A8D629E1155F004DDEDF /* TabBarController.swift */; };
@@ -18,13 +17,15 @@
 		FA51A8DD29E11690004DDEDF /* ExchangeRateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA51A8DC29E11690004DDEDF /* ExchangeRateViewController.swift */; };
 		FA51A8E029E120BB004DDEDF /* TabBar+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA51A8DF29E120BB004DDEDF /* TabBar+Extension.swift */; };
 		FA51A8E329E1215D004DDEDF /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = FA51A8E229E1215D004DDEDF /* SnapKit */; };
+		FA51A8E529E121FF004DDEDF /* InterestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA51A8E429E121FF004DDEDF /* InterestView.swift */; };
+		FA51A8E929E129C1004DDEDF /* InterestTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA51A8E829E129C1004DDEDF /* InterestTableViewCell.swift */; };
+		FA51A8EB29E1399F004DDEDF /* CalculatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA51A8EA29E1399E004DDEDF /* CalculatorView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FA51A8BB29E11251004DDEDF /* ExchangeRateCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExchangeRateCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA51A8BE29E11251004DDEDF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA51A8C029E11251004DDEDF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FA51A8C229E11251004DDEDF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FA51A8C729E11253004DDEDF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA51A8CA29E11253004DDEDF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA51A8CC29E11253004DDEDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -33,6 +34,9 @@
 		FA51A8DA29E11665004DDEDF /* CalculatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorViewController.swift; sourceTree = "<group>"; };
 		FA51A8DC29E11690004DDEDF /* ExchangeRateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRateViewController.swift; sourceTree = "<group>"; };
 		FA51A8DF29E120BB004DDEDF /* TabBar+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TabBar+Extension.swift"; sourceTree = "<group>"; };
+		FA51A8E429E121FF004DDEDF /* InterestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterestView.swift; sourceTree = "<group>"; };
+		FA51A8E829E129C1004DDEDF /* InterestTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterestTableViewCell.swift; sourceTree = "<group>"; };
+		FA51A8EA29E1399E004DDEDF /* CalculatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CalculatorView.swift; path = ExchangeRateCalculator/View/CalculatorView.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,7 +84,6 @@
 		FA51A8D229E1143E004DDEDF /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				FA51A8C229E11251004DDEDF /* ViewController.swift */,
 				FA51A8D629E1155F004DDEDF /* TabBarController.swift */,
 				FA51A8D829E115EB004DDEDF /* InterestViewController.swift */,
 				FA51A8DA29E11665004DDEDF /* CalculatorViewController.swift */,
@@ -93,6 +96,8 @@
 			isa = PBXGroup;
 			children = (
 				FA51A8C929E11253004DDEDF /* LaunchScreen.storyboard */,
+				FA51A8E729E12965004DDEDF /* Cell */,
+				FA51A8E629E1295B004DDEDF /* View */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -119,6 +124,23 @@
 				FA51A8DF29E120BB004DDEDF /* TabBar+Extension.swift */,
 			);
 			name = Helper;
+			sourceTree = "<group>";
+		};
+		FA51A8E629E1295B004DDEDF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FA51A8E429E121FF004DDEDF /* InterestView.swift */,
+				FA51A8EA29E1399E004DDEDF /* CalculatorView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FA51A8E729E12965004DDEDF /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				FA51A8E829E129C1004DDEDF /* InterestTableViewCell.swift */,
+			);
+			name = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -198,12 +220,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA51A8DD29E11690004DDEDF /* ExchangeRateViewController.swift in Sources */,
-				FA51A8C329E11251004DDEDF /* ViewController.swift in Sources */,
 				FA51A8D729E1155F004DDEDF /* TabBarController.swift in Sources */,
 				FA51A8D929E115EB004DDEDF /* InterestViewController.swift in Sources */,
 				FA51A8BF29E11251004DDEDF /* AppDelegate.swift in Sources */,
+				FA51A8E529E121FF004DDEDF /* InterestView.swift in Sources */,
 				FA51A8E029E120BB004DDEDF /* TabBar+Extension.swift in Sources */,
+				FA51A8EB29E1399F004DDEDF /* CalculatorView.swift in Sources */,
 				FA51A8DB29E11665004DDEDF /* CalculatorViewController.swift in Sources */,
+				FA51A8E929E129C1004DDEDF /* InterestTableViewCell.swift in Sources */,
 				FA51A8C129E11251004DDEDF /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
