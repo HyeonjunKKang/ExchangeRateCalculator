@@ -10,9 +10,14 @@
 		FA51A8BF29E11251004DDEDF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA51A8BE29E11251004DDEDF /* AppDelegate.swift */; };
 		FA51A8C129E11251004DDEDF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA51A8C029E11251004DDEDF /* SceneDelegate.swift */; };
 		FA51A8C329E11251004DDEDF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA51A8C229E11251004DDEDF /* ViewController.swift */; };
-		FA51A8C629E11251004DDEDF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA51A8C429E11251004DDEDF /* Main.storyboard */; };
 		FA51A8C829E11253004DDEDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA51A8C729E11253004DDEDF /* Assets.xcassets */; };
 		FA51A8CB29E11253004DDEDF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA51A8C929E11253004DDEDF /* LaunchScreen.storyboard */; };
+		FA51A8D729E1155F004DDEDF /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA51A8D629E1155F004DDEDF /* TabBarController.swift */; };
+		FA51A8D929E115EB004DDEDF /* InterestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA51A8D829E115EB004DDEDF /* InterestViewController.swift */; };
+		FA51A8DB29E11665004DDEDF /* CalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA51A8DA29E11665004DDEDF /* CalculatorViewController.swift */; };
+		FA51A8DD29E11690004DDEDF /* ExchangeRateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA51A8DC29E11690004DDEDF /* ExchangeRateViewController.swift */; };
+		FA51A8E029E120BB004DDEDF /* TabBar+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA51A8DF29E120BB004DDEDF /* TabBar+Extension.swift */; };
+		FA51A8E329E1215D004DDEDF /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = FA51A8E229E1215D004DDEDF /* SnapKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,10 +25,14 @@
 		FA51A8BE29E11251004DDEDF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA51A8C029E11251004DDEDF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		FA51A8C229E11251004DDEDF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		FA51A8C529E11251004DDEDF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FA51A8C729E11253004DDEDF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA51A8CA29E11253004DDEDF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA51A8CC29E11253004DDEDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA51A8D629E1155F004DDEDF /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		FA51A8D829E115EB004DDEDF /* InterestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterestViewController.swift; sourceTree = "<group>"; };
+		FA51A8DA29E11665004DDEDF /* CalculatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorViewController.swift; sourceTree = "<group>"; };
+		FA51A8DC29E11690004DDEDF /* ExchangeRateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRateViewController.swift; sourceTree = "<group>"; };
+		FA51A8DF29E120BB004DDEDF /* TabBar+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TabBar+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA51A8E329E1215D004DDEDF /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,15 +66,59 @@
 		FA51A8BD29E11251004DDEDF /* ExchangeRateCalculator */ = {
 			isa = PBXGroup;
 			children = (
-				FA51A8BE29E11251004DDEDF /* AppDelegate.swift */,
-				FA51A8C029E11251004DDEDF /* SceneDelegate.swift */,
-				FA51A8C229E11251004DDEDF /* ViewController.swift */,
-				FA51A8C429E11251004DDEDF /* Main.storyboard */,
+				FA51A8D529E11462004DDEDF /* App */,
+				FA51A8D429E1144B004DDEDF /* Model */,
+				FA51A8D329E11445004DDEDF /* View */,
+				FA51A8D229E1143E004DDEDF /* Controller */,
+				FA51A8DE29E12090004DDEDF /* Helper */,
 				FA51A8C729E11253004DDEDF /* Assets.xcassets */,
-				FA51A8C929E11253004DDEDF /* LaunchScreen.storyboard */,
 				FA51A8CC29E11253004DDEDF /* Info.plist */,
 			);
 			path = ExchangeRateCalculator;
+			sourceTree = "<group>";
+		};
+		FA51A8D229E1143E004DDEDF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FA51A8C229E11251004DDEDF /* ViewController.swift */,
+				FA51A8D629E1155F004DDEDF /* TabBarController.swift */,
+				FA51A8D829E115EB004DDEDF /* InterestViewController.swift */,
+				FA51A8DA29E11665004DDEDF /* CalculatorViewController.swift */,
+				FA51A8DC29E11690004DDEDF /* ExchangeRateViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		FA51A8D329E11445004DDEDF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FA51A8C929E11253004DDEDF /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FA51A8D429E1144B004DDEDF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FA51A8D529E11462004DDEDF /* App */ = {
+			isa = PBXGroup;
+			children = (
+				FA51A8BE29E11251004DDEDF /* AppDelegate.swift */,
+				FA51A8C029E11251004DDEDF /* SceneDelegate.swift */,
+			);
+			name = App;
+			sourceTree = "<group>";
+		};
+		FA51A8DE29E12090004DDEDF /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				FA51A8DF29E120BB004DDEDF /* TabBar+Extension.swift */,
+			);
+			name = Helper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +137,9 @@
 			dependencies = (
 			);
 			name = ExchangeRateCalculator;
+			packageProductDependencies = (
+				FA51A8E229E1215D004DDEDF /* SnapKit */,
+			);
 			productName = ExchangeRateCalculator;
 			productReference = FA51A8BB29E11251004DDEDF /* ExchangeRateCalculator.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +168,9 @@
 				Base,
 			);
 			mainGroup = FA51A8B229E11250004DDEDF;
+			packageReferences = (
+				FA51A8E129E1215D004DDEDF /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = FA51A8BC29E11251004DDEDF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,7 +187,6 @@
 			files = (
 				FA51A8CB29E11253004DDEDF /* LaunchScreen.storyboard in Resources */,
 				FA51A8C829E11253004DDEDF /* Assets.xcassets in Resources */,
-				FA51A8C629E11251004DDEDF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,8 +197,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA51A8DD29E11690004DDEDF /* ExchangeRateViewController.swift in Sources */,
 				FA51A8C329E11251004DDEDF /* ViewController.swift in Sources */,
+				FA51A8D729E1155F004DDEDF /* TabBarController.swift in Sources */,
+				FA51A8D929E115EB004DDEDF /* InterestViewController.swift in Sources */,
 				FA51A8BF29E11251004DDEDF /* AppDelegate.swift in Sources */,
+				FA51A8E029E120BB004DDEDF /* TabBar+Extension.swift in Sources */,
+				FA51A8DB29E11665004DDEDF /* CalculatorViewController.swift in Sources */,
 				FA51A8C129E11251004DDEDF /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -147,14 +211,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		FA51A8C429E11251004DDEDF /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FA51A8C529E11251004DDEDF /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		FA51A8C929E11253004DDEDF /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -291,7 +347,6 @@
 				INFOPLIST_FILE = ExchangeRateCalculator/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -318,7 +373,6 @@
 				INFOPLIST_FILE = ExchangeRateCalculator/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -356,6 +410,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FA51A8E129E1215D004DDEDF /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				branch = develop;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FA51A8E229E1215D004DDEDF /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FA51A8E129E1215D004DDEDF /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FA51A8B329E11250004DDEDF /* Project object */;
 }
