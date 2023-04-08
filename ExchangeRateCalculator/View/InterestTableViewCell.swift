@@ -43,8 +43,11 @@ final class InterestTableViewCell: UITableViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
-    private func setLayout(){
-        
+   
+}
+
+private extension InterestTableViewCell{
+     func setLayout(){
         [
             countryImageView,
             countryNameLabel,
@@ -53,7 +56,6 @@ final class InterestTableViewCell: UITableViewCell {
         ].forEach{ self.addSubview($0) }
         
         let margin: CGFloat = 15
-        let width: CGFloat = 120
         
         countryImageView.snp.makeConstraints{
             $0.leading.equalToSuperview().offset(margin)
@@ -73,5 +75,4 @@ final class InterestTableViewCell: UITableViewCell {
         }
         
     }
-
 }
