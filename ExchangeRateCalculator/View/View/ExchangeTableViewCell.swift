@@ -9,6 +9,20 @@ import UIKit
 import SnapKit
 
 final class ExchangeTableViewCell: UITableViewCell {
+    
+    var exchangeRateData: ExchangeRateModel?{
+        didSet{
+            self.currencyName.text = exchangeRateData?.curUnit
+            self.countryNameLabel.text = exchangeRateData?.countryName
+            self.salesBaseRateLabel.text = exchangeRateData?.dealBasR
+            self.remittanceLabel.text = exchangeRateData?.tts
+            self.getLabel.text = exchangeRateData?.ttb
+            
+        }
+    }
+    
+    
+    
 
     private let countryImageView: UIImageView = {
         let imageView = UIImageView()
@@ -106,14 +120,15 @@ private extension ExchangeTableViewCell{
             $0.leading.equalTo(countryImageView.snp.trailing).offset(30)
             $0.centerY.equalToSuperview()
         }
-        
-        salesBaseRateLabel.snp.makeConstraints{
-            $0.leading.equalTo(countryStackView.snp.trailing).offset(30)
-            $0.centerY.equalToSuperview()
-        }
+
         
         remittanceGetStackView.snp.makeConstraints{
             $0.trailing.equalToSuperview().inset(10)
+            $0.centerY.equalToSuperview()
+        }
+        
+        salesBaseRateLabel.snp.makeConstraints{
+            $0.trailing.equalToSuperview().offset(-130)
             $0.centerY.equalToSuperview()
         }
         
