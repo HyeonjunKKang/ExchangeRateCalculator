@@ -9,12 +9,16 @@ import UIKit
 
 final class TabBarController: UITabBarController {
     
+    let networkmodel = NetworkManagerModel.shared
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         setView()
         setTabBarController()
         setUpTabbarStyle()
+        
+        networkmodel.fetchData()
     }
     
 }
