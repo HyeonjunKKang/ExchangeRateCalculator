@@ -9,23 +9,28 @@ import UIKit
 
 class ExchangeRateViewController: UIViewController {
     
-    let exchangeRateView = ExchangeRateView()
+    let networkManager = NetworkManagerModel.shared
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        setNavigationBar()
-       
-    }
+    let exchangeRateView = ExchangeRateView()
     
     override func loadView() {
         self.view = exchangeRateView
     }
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        setNavigationBar()
+        
+        exchangeRateView.exchangeRateData = networkManager.exchangeRateModel.rateData
+    }
+    
+    
+    
 }
 
 private extension ExchangeRateViewController{
     func setNavigationBar(){
-        self.title = "0000-00-00 00:00:00기준"
+        self.title = "\(networkManager.exchangeRateModel.basedDate) \(networkManager.exchangeRateModel.basedTime)기준"
     }
 }
