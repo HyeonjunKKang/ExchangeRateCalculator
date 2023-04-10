@@ -17,7 +17,6 @@ final class ExchangeRateView: UIView {
         
         tableview.register(ExchangeTableViewCell.self, forCellReuseIdentifier: "ExchangeTableViewCell")
         tableview.dataSource = self
-        tableview.delegate = self
         
         return tableview
     }()
@@ -89,8 +88,10 @@ extension ExchangeRateView: UITableViewDataSource{
         
         if let data = exchangeRateData{
             cell.exchangeRateData = data[indexPath.row]
+            cell.falgImage = ImageManager.shared.flagDataArray[data[indexPath.row].curUnit]
         }
         cell.selectionStyle = .none
+        
         
         return cell
     }
@@ -103,24 +104,6 @@ extension ExchangeRateView: UITableViewDataSource{
         return 10
     }
 
-}
-
-extension ExchangeRateView: UITableViewDelegate{
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 50
-    }
-    
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let alertController = UIAlertController(title: "관심", message: "관심항목에 추가하시겠습니까?", preferredStyle: .alert)
-        
-        let addAction = UIAlertAction(title: "추가", style: .default) { _ in
-            <#code#>
-        }
-        let cancleAction = UIAlertAction(title: "취소", style: .cancel)
-        
-        alertController.addAction(addAction)
-        alertController.addAction(cancleAction)
-    }
 }
 
 private extension ExchangeRateView{

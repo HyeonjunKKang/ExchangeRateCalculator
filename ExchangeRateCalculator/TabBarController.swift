@@ -17,10 +17,8 @@ final class TabBarController: UITabBarController {
         setView()
         setTabBarController()
         setUpTabbarStyle()
-        
-        networkmodel.fetchData()
+
     }
-    
 }
 
 private extension TabBarController{
@@ -40,7 +38,7 @@ private extension TabBarController{
         let exchangerateViewController = UINavigationController(rootViewController: ExchangeRateViewController())
         exchangerateViewController.tabBarItem = UITabBarItem(title: "환율", image: UIImage(systemName: "dollarsign.arrow.circlepath"), selectedImage: UIImage(systemName: "dollarsign.arrow.circlepath"))
         
-        viewControllers = [interestViewController, calculatorViewController, exchangerateViewController]
+        viewControllers = [calculatorViewController, interestViewController, exchangerateViewController]
     }
     
     func setUpTabbarStyle(){

@@ -12,17 +12,23 @@ final class ExchangeTableViewCell: UITableViewCell {
     
     var exchangeRateData: ExchangeRateModel?{
         didSet{
-            self.currencyName.text = exchangeRateData?.curUnit
-            self.countryNameLabel.text = exchangeRateData?.countryName
-            self.salesBaseRateLabel.text = exchangeRateData?.dealBasR
-            self.remittanceLabel.text = exchangeRateData?.tts
-            self.getLabel.text = exchangeRateData?.ttb
-            
+            DispatchQueue.main.async {
+                self.currencyName.text = self.exchangeRateData?.curUnit
+                self.countryNameLabel.text = self.exchangeRateData?.countryName
+                self.salesBaseRateLabel.text = self.exchangeRateData?.dealBasR
+                self.remittanceLabel.text = self.exchangeRateData?.tts
+                self.getLabel.text = self.exchangeRateData?.ttb
+            }
         }
     }
     
-    
-    
+    var falgImage: UIImage?{
+        didSet{
+            DispatchQueue.main.async {
+                self.countryImageView.image = self.falgImage
+            }
+        }
+    }
 
     private let countryImageView: UIImageView = {
         let imageView = UIImageView()

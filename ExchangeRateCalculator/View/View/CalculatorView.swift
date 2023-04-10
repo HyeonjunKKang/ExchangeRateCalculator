@@ -11,7 +11,6 @@ import SnapKit
 final class CalculatorView: UIView {
 
     private let buttonheight: CGFloat = (UIScreen.main.bounds.width / 3) + 3
-    
     private lazy var leastheight: CGFloat = UIScreen.main.bounds.height - buttonheight
     
      let zeroButton: UIButton = {
@@ -77,16 +76,9 @@ final class CalculatorView: UIView {
         return button
     }()
     
-    private let nineButton: UIButton = {
+    let nineButton: UIButton = {
         let button =  UIButton()
         button.setTitle("9", for: .normal)
-        
-        return button
-    }()
-    
-     let dotButton: UIButton = {
-        let button =  UIButton()
-        button.setTitle(".", for: .normal)
         
         return button
     }()
@@ -97,7 +89,7 @@ final class CalculatorView: UIView {
         
         return button
     }()
-    
+
      let enterButton: UIButton = {
         let button =  UIButton()
         button.setTitle("Enter", for: .normal)
@@ -113,7 +105,7 @@ final class CalculatorView: UIView {
     }()
     
     private lazy var horizontalStackView1: UIStackView = {
-        let stackView = UIStackView(arrangedSubviews: [zeroButton, dotButton, enterButton])
+        let stackView = UIStackView(arrangedSubviews: [zeroButton, clearButton, enterButton])
         stackView.axis = .horizontal
         stackView.alignment = .fill
         stackView.distribution = .fillEqually
@@ -167,7 +159,8 @@ final class CalculatorView: UIView {
     
      let resultCountryLabel: UILabel = {
         let label = UILabel()
-        label.text = "USD"
+        label.text = "선택해주세요"
+        label.font = .systemFont(ofSize: 13, weight: .bold)
         
         return label
     }()
@@ -201,7 +194,7 @@ final class CalculatorView: UIView {
        return label
    }()
    
-    let selectCountrySelectButton: UIButton = {
+    lazy var selectCountrySelectButton: UIButton = {
        let button = UIButton(type: .custom)
        button.setImage(UIImage(systemName: "chevron.down"), for: .normal)
        
@@ -222,12 +215,7 @@ final class CalculatorView: UIView {
         
         return line
     }()
-    
-    
-    
-    
-    
-    
+
     override init(frame: CGRect) {
         super.init(frame: frame)
         
@@ -241,8 +229,6 @@ final class CalculatorView: UIView {
 
 private extension CalculatorView{
     func setLayout(){
-        
-        
         [
             zeroButton,
             oneButton,
@@ -254,7 +240,7 @@ private extension CalculatorView{
             sevenButton,
             eightButton,
             nineButton,
-            dotButton,
+            clearButton,
             enterButton
         ].forEach{
             $0.backgroundColor = .white
@@ -337,7 +323,5 @@ private extension CalculatorView{
             $0.trailing.equalToSuperview().inset(20)
             $0.bottom.equalTo(lineView2.snp.top).inset(-30)
         }
-        
-        
     }
 }

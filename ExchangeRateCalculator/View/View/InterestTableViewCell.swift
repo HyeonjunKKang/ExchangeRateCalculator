@@ -10,6 +10,23 @@ import SnapKit
 
 final class InterestTableViewCell: UITableViewCell {
     
+    var exchangeRateData: ExchangeRateModel?{
+        didSet{
+            DispatchQueue.main.async {
+                self.countryNameLabel.text = self.exchangeRateData?.countryName
+                self.sellValueLabel.text = self.exchangeRateData?.dealBasR
+            }
+        }
+    }
+    
+    var falgImage: UIImage?{
+        didSet{
+            DispatchQueue.main.async {
+                self.countryImageView.image = self.falgImage
+            }
+        }
+    }
+    
     private lazy var countryImageView: UIImageView = {
         let imageView = UIImageView()
         imageView.backgroundColor = .gray

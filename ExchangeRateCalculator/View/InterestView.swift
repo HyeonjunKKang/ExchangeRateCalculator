@@ -9,7 +9,13 @@ import UIKit
 import SnapKit
 
 final class InterestView: UIView {
-
+    
+    var exchangeRateData: [ExchangeRateModel]?{
+        didSet{
+            interestTableView.reloadData()
+        }
+    }
+    
     let referencedateLabel: UILabel = {
         let label =  UILabel()
         label.text = "0000-00-00 00:00:00기준"
@@ -25,7 +31,6 @@ final class InterestView: UIView {
         
         tableview.register(InterestTableViewCell.self, forCellReuseIdentifier: "InterestTableViewCell")
         tableview.dataSource = self
-        tableview.delegate = self
         
         return tableview
     }()
@@ -75,32 +80,29 @@ private extension InterestView{
 extension InterestView: UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
         guard let cell = interestTableView.dequeueReusableCell(withIdentifier: "InterestTableViewCell", for: indexPath) as? InterestTableViewCell else { return UITableViewCell() }
+        
+        if let data = exchangeRateData{
+            cell.exchangeRateData = data[indexPath.row]
+            cell.falgImage = ImageManager.shared.flagDataArray[data[indexPath.row].curUnit]
+        }
+        cell.selectionStyle = .none
         
         return cell
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        
+        var count = 0
+        if let data = exchangeRateData{
+            count = data.count
+        }
+        print(count)
+        return count
     }
-    
+
     
 }
 
-extension InterestView: UITableViewDelegate{
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 100
-    }
-    
-    // TODO: - 관심 항목 삭제 기능 구현
-    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
-        
-        if editingStyle == .delete{
-            
-        }
-    }
-    
-    func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCell.EditingStyle {
-        return .delete
-    }
-}
+
