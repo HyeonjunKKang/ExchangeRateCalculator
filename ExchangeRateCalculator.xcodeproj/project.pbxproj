@@ -19,9 +19,19 @@
 		FA51A8E329E1215D004DDEDF /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = FA51A8E229E1215D004DDEDF /* SnapKit */; };
 		FA51A8E529E121FF004DDEDF /* InterestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA51A8E429E121FF004DDEDF /* InterestView.swift */; };
 		FA51A8E929E129C1004DDEDF /* InterestTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA51A8E829E129C1004DDEDF /* InterestTableViewCell.swift */; };
-		FA51A8EB29E1399F004DDEDF /* CalculatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA51A8EA29E1399E004DDEDF /* CalculatorView.swift */; };
 		FA51A8ED29E15F6D004DDEDF /* ExchangeRateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA51A8EC29E15F6D004DDEDF /* ExchangeRateView.swift */; };
 		FA51A8EF29E167C7004DDEDF /* ExchangeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA51A8EE29E167C7004DDEDF /* ExchangeTableViewCell.swift */; };
+		FA51A8F129E170D2004DDEDF /* Data.plist in Resources */ = {isa = PBXBuildFile; fileRef = FA51A8F029E170D2004DDEDF /* Data.plist */; };
+		FA51A8F329E1710D004DDEDF /* NetworkManagerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA51A8F229E1710D004DDEDF /* NetworkManagerModel.swift */; };
+		FA51A8F629E1719F004DDEDF /* ExchangeRateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA51A8F529E1719F004DDEDF /* ExchangeRateModel.swift */; };
+		FA51A8F929E178BB004DDEDF /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = FA51A8F829E178BB004DDEDF /* Alamofire */; };
+		FA51A8FC29E23409004DDEDF /* NetworkManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA51A8FB29E23408004DDEDF /* NetworkManagerProtocol.swift */; };
+		FA51A8FE29E23823004DDEDF /* CalculatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA51A8FD29E23823004DDEDF /* CalculatorView.swift */; };
+		FA51A90029E242CB004DDEDF /* UserDefaultManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA51A8FF29E242CA004DDEDF /* UserDefaultManager.swift */; };
+		FA806C7F29E28A7D00D590C3 /* ImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA806C7E29E28A7D00D590C3 /* ImageManager.swift */; };
+		FA806C8129E291DC00D590C3 /* SelectCounturyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA806C8029E291DC00D590C3 /* SelectCounturyViewController.swift */; };
+		FA806C8329E2975300D590C3 /* SelectDelegateProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA806C8229E2975300D590C3 /* SelectDelegateProtocol.swift */; };
+		FA806C8529E2C6FE00D590C3 /* CalculatorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA806C8429E2C6FD00D590C3 /* CalculatorModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,9 +48,18 @@
 		FA51A8DF29E120BB004DDEDF /* TabBar+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TabBar+Extension.swift"; sourceTree = "<group>"; };
 		FA51A8E429E121FF004DDEDF /* InterestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterestView.swift; sourceTree = "<group>"; };
 		FA51A8E829E129C1004DDEDF /* InterestTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterestTableViewCell.swift; sourceTree = "<group>"; };
-		FA51A8EA29E1399E004DDEDF /* CalculatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CalculatorView.swift; path = ExchangeRateCalculator/View/CalculatorView.swift; sourceTree = SOURCE_ROOT; };
 		FA51A8EC29E15F6D004DDEDF /* ExchangeRateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRateView.swift; sourceTree = "<group>"; };
 		FA51A8EE29E167C7004DDEDF /* ExchangeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeTableViewCell.swift; sourceTree = "<group>"; };
+		FA51A8F029E170D2004DDEDF /* Data.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Data.plist; sourceTree = "<group>"; };
+		FA51A8F229E1710D004DDEDF /* NetworkManagerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManagerModel.swift; sourceTree = "<group>"; };
+		FA51A8F529E1719F004DDEDF /* ExchangeRateModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRateModel.swift; sourceTree = "<group>"; };
+		FA51A8FB29E23408004DDEDF /* NetworkManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManagerProtocol.swift; sourceTree = "<group>"; };
+		FA51A8FD29E23823004DDEDF /* CalculatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CalculatorView.swift; path = View/CalculatorView.swift; sourceTree = "<group>"; };
+		FA51A8FF29E242CA004DDEDF /* UserDefaultManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultManager.swift; sourceTree = "<group>"; };
+		FA806C7E29E28A7D00D590C3 /* ImageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageManager.swift; sourceTree = "<group>"; };
+		FA806C8029E291DC00D590C3 /* SelectCounturyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectCounturyViewController.swift; sourceTree = "<group>"; };
+		FA806C8229E2975300D590C3 /* SelectDelegateProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectDelegateProtocol.swift; sourceTree = "<group>"; };
+		FA806C8429E2C6FD00D590C3 /* CalculatorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +68,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA51A8E329E1215D004DDEDF /* SnapKit in Frameworks */,
+				FA51A8F929E178BB004DDEDF /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,11 +96,12 @@
 			children = (
 				FA51A8D529E11462004DDEDF /* App */,
 				FA51A8D429E1144B004DDEDF /* Model */,
-				FA51A8D329E11445004DDEDF /* View */,
+				FA51A8E629E1295B004DDEDF /* View */,
 				FA51A8D229E1143E004DDEDF /* Controller */,
 				FA51A8DE29E12090004DDEDF /* Helper */,
 				FA51A8C729E11253004DDEDF /* Assets.xcassets */,
 				FA51A8CC29E11253004DDEDF /* Info.plist */,
+				FA51A8F029E170D2004DDEDF /* Data.plist */,
 			);
 			path = ExchangeRateCalculator;
 			sourceTree = "<group>";
@@ -92,23 +113,20 @@
 				FA51A8D829E115EB004DDEDF /* InterestViewController.swift */,
 				FA51A8DA29E11665004DDEDF /* CalculatorViewController.swift */,
 				FA51A8DC29E11690004DDEDF /* ExchangeRateViewController.swift */,
+				FA806C8029E291DC00D590C3 /* SelectCounturyViewController.swift */,
 			);
 			name = Controller;
-			sourceTree = "<group>";
-		};
-		FA51A8D329E11445004DDEDF /* View */ = {
-			isa = PBXGroup;
-			children = (
-				FA51A8C929E11253004DDEDF /* LaunchScreen.storyboard */,
-				FA51A8E729E12965004DDEDF /* Cell */,
-				FA51A8E629E1295B004DDEDF /* View */,
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		FA51A8D429E1144B004DDEDF /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				FA51A8FA29E233F2004DDEDF /* Protocol */,
+				FA51A8F429E17174004DDEDF /* Entity */,
+				FA51A8F229E1710D004DDEDF /* NetworkManagerModel.swift */,
+				FA51A8FF29E242CA004DDEDF /* UserDefaultManager.swift */,
+				FA806C7E29E28A7D00D590C3 /* ImageManager.swift */,
+				FA806C8429E2C6FD00D590C3 /* CalculatorModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -133,9 +151,11 @@
 		FA51A8E629E1295B004DDEDF /* View */ = {
 			isa = PBXGroup;
 			children = (
+				FA51A8E729E12965004DDEDF /* Cell */,
 				FA51A8E429E121FF004DDEDF /* InterestView.swift */,
-				FA51A8EA29E1399E004DDEDF /* CalculatorView.swift */,
+				FA51A8FD29E23823004DDEDF /* CalculatorView.swift */,
 				FA51A8EC29E15F6D004DDEDF /* ExchangeRateView.swift */,
+				FA51A8C929E11253004DDEDF /* LaunchScreen.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -147,6 +167,24 @@
 				FA51A8EE29E167C7004DDEDF /* ExchangeTableViewCell.swift */,
 			);
 			name = Cell;
+			path = View;
+			sourceTree = "<group>";
+		};
+		FA51A8F429E17174004DDEDF /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				FA51A8F529E1719F004DDEDF /* ExchangeRateModel.swift */,
+			);
+			name = Entity;
+			sourceTree = "<group>";
+		};
+		FA51A8FA29E233F2004DDEDF /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				FA51A8FB29E23408004DDEDF /* NetworkManagerProtocol.swift */,
+				FA806C8229E2975300D590C3 /* SelectDelegateProtocol.swift */,
+			);
+			path = Protocol;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -167,6 +205,7 @@
 			name = ExchangeRateCalculator;
 			packageProductDependencies = (
 				FA51A8E229E1215D004DDEDF /* SnapKit */,
+				FA51A8F829E178BB004DDEDF /* Alamofire */,
 			);
 			productName = ExchangeRateCalculator;
 			productReference = FA51A8BB29E11251004DDEDF /* ExchangeRateCalculator.app */;
@@ -198,6 +237,7 @@
 			mainGroup = FA51A8B229E11250004DDEDF;
 			packageReferences = (
 				FA51A8E129E1215D004DDEDF /* XCRemoteSwiftPackageReference "SnapKit" */,
+				FA51A8F729E178BB004DDEDF /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			productRefGroup = FA51A8BC29E11251004DDEDF /* Products */;
 			projectDirPath = "";
@@ -213,6 +253,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA51A8F129E170D2004DDEDF /* Data.plist in Resources */,
 				FA51A8CB29E11253004DDEDF /* LaunchScreen.storyboard in Resources */,
 				FA51A8C829E11253004DDEDF /* Assets.xcassets in Resources */,
 			);
@@ -226,16 +267,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA51A8EF29E167C7004DDEDF /* ExchangeTableViewCell.swift in Sources */,
+				FA806C8129E291DC00D590C3 /* SelectCounturyViewController.swift in Sources */,
+				FA806C7F29E28A7D00D590C3 /* ImageManager.swift in Sources */,
 				FA51A8DD29E11690004DDEDF /* ExchangeRateViewController.swift in Sources */,
+				FA51A90029E242CB004DDEDF /* UserDefaultManager.swift in Sources */,
 				FA51A8D729E1155F004DDEDF /* TabBarController.swift in Sources */,
 				FA51A8D929E115EB004DDEDF /* InterestViewController.swift in Sources */,
+				FA51A8FE29E23823004DDEDF /* CalculatorView.swift in Sources */,
 				FA51A8BF29E11251004DDEDF /* AppDelegate.swift in Sources */,
 				FA51A8E529E121FF004DDEDF /* InterestView.swift in Sources */,
 				FA51A8ED29E15F6D004DDEDF /* ExchangeRateView.swift in Sources */,
+				FA806C8529E2C6FE00D590C3 /* CalculatorModel.swift in Sources */,
 				FA51A8E029E120BB004DDEDF /* TabBar+Extension.swift in Sources */,
-				FA51A8EB29E1399F004DDEDF /* CalculatorView.swift in Sources */,
+				FA51A8F629E1719F004DDEDF /* ExchangeRateModel.swift in Sources */,
+				FA806C8329E2975300D590C3 /* SelectDelegateProtocol.swift in Sources */,
 				FA51A8DB29E11665004DDEDF /* CalculatorViewController.swift in Sources */,
+				FA51A8F329E1710D004DDEDF /* NetworkManagerModel.swift in Sources */,
 				FA51A8E929E129C1004DDEDF /* InterestTableViewCell.swift in Sources */,
+				FA51A8FC29E23409004DDEDF /* NetworkManagerProtocol.swift in Sources */,
 				FA51A8C129E11251004DDEDF /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -452,6 +501,14 @@
 				kind = branch;
 			};
 		};
+		FA51A8F729E178BB004DDEDF /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -459,6 +516,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = FA51A8E129E1215D004DDEDF /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
+		};
+		FA51A8F829E178BB004DDEDF /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FA51A8F729E178BB004DDEDF /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

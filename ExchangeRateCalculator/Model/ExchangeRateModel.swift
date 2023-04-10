@@ -17,6 +17,8 @@ struct ResultData{
 }
 
 struct ExchangeRateModel: Codable {
+    
+    
     let result: Int
     let curUnit: String
     let ttb: String
