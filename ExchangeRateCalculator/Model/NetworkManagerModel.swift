@@ -19,7 +19,7 @@ final class NetworkManagerModel: NetworkManagerProtocol{
     private init(){}
    
     // 재귀함수 > 날짜를 바꿔가며 데이터 읽어오기를 시도한다.
-    func fetchData(date: Date = Date() + 86400, count: Int = 0){
+    func fetchData(date: Date = Date() + 86400, count: Int = 0, completion: (([ExchangeRateModel]?) -> ())? = nil){
         guard let path = Bundle.main.url(forResource: "Data", withExtension: "plist") else { return }
         
         guard let dictionary = NSDictionary(contentsOf: path) else { return }
@@ -35,8 +35,6 @@ final class NetworkManagerModel: NetworkManagerProtocol{
         
         formatter.dateFormat = "hh:mm:ss"
         let convertTime = formatter.string(from: dateString)
-        
-
 
         let param = [
             "authkey": key,
@@ -77,13 +75,12 @@ final class NetworkManagerModel: NetworkManagerProtocol{
                 }
                 
                 print(self?.exchangeRateModel)
-    
+                
+                if let handler = completion{
+                    handler(self?.exchangeRateModel.rateData)
+                }
             }
         }.resume()
-        
-        
-
-        
     }
     
     private func decoder<T: Decodable>(data: Data, model: T.Type) -> T?{
