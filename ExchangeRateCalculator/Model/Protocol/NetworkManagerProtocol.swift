@@ -8,5 +8,5 @@
 import Foundation
 
 protocol NetworkManagerProtocol{
-    func fetchData(date: Date, count: Int)
+    func fetchData(date: Date, count: Int, completion: (([ExchangeRateModel]?) -> ())?)
 }
